@@ -16,3 +16,10 @@ task :update_languages do |t, args|
   end
   puts "done updating #{file_path}"
 end
+
+desc "translating text"
+task :translate, :api_key, :text, :from, :to do |t, args|
+  Ortsbo::API_KEY = args[:api_key]
+  puts Ortsbo.translate args[:text], args[:from], args[:to]
+end
+
