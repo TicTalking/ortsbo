@@ -1,4 +1,213 @@
 ---
-- :english_name: Romanian
-  :native_name: Romana
-  :code: ron
+- !ruby/object:Ortsbo::Language
+  english_name: Afrikaans
+  native_name: Afrikaans
+  code: afr
+- !ruby/object:Ortsbo::Language
+  english_name: Albanian
+  native_name: shqipe
+  code: sqi
+- !ruby/object:Ortsbo::Language
+  english_name: Arabic
+  native_name: العربية
+  code: ara
+- !ruby/object:Ortsbo::Language
+  english_name: Belarusian
+  native_name: Беларускі
+  code: bel
+- !ruby/object:Ortsbo::Language
+  english_name: Bulgarian
+  native_name: български
+  code: bul
+- !ruby/object:Ortsbo::Language
+  english_name: Catalan
+  native_name: català
+  code: cat
+- !ruby/object:Ortsbo::Language
+  english_name: Chinese (Simplified)
+  native_name: 中文(简体)
+  code: zhs
+- !ruby/object:Ortsbo::Language
+  english_name: Chinese (Traditional)
+  native_name: 中文(繁體)
+  code: zht
+- !ruby/object:Ortsbo::Language
+  english_name: Croatian
+  native_name: hrvatski
+  code: hrv
+- !ruby/object:Ortsbo::Language
+  english_name: Czech
+  native_name: čeština
+  code: ces
+- !ruby/object:Ortsbo::Language
+  english_name: Danish
+  native_name: dansk
+  code: dan
+- !ruby/object:Ortsbo::Language
+  english_name: Dutch
+  native_name: Nederlands
+  code: nld
+- !ruby/object:Ortsbo::Language
+  english_name: English
+  native_name: English
+  code: eng
+- !ruby/object:Ortsbo::Language
+  english_name: Estonian
+  native_name: eesti
+  code: est
+- !ruby/object:Ortsbo::Language
+  english_name: Filipino (Philippines)
+  native_name: Filipino (Pilipinas)
+  code: fil
+- !ruby/object:Ortsbo::Language
+  english_name: Finnish
+  native_name: suomi
+  code: fin
+- !ruby/object:Ortsbo::Language
+  english_name: French
+  native_name: français
+  code: fra
+- !ruby/object:Ortsbo::Language
+  english_name: Galician
+  native_name: galego
+  code: glg
+- !ruby/object:Ortsbo::Language
+  english_name: German
+  native_name: Deutsch
+  code: deu
+- !ruby/object:Ortsbo::Language
+  english_name: Greek
+  native_name: ελληνικά
+  code: ell
+- !ruby/object:Ortsbo::Language
+  english_name: Haitian Creole
+  native_name: Kreyòl ayisyen
+  code: htc
+- !ruby/object:Ortsbo::Language
+  english_name: Hebrew
+  native_name: עברית
+  code: heb
+- !ruby/object:Ortsbo::Language
+  english_name: Hindi
+  native_name: हिंदी
+  code: hin
+- !ruby/object:Ortsbo::Language
+  english_name: Hungarian
+  native_name: magyar
+  code: hun
+- !ruby/object:Ortsbo::Language
+  english_name: Icelandic
+  native_name: íslenska
+  code: isl
+- !ruby/object:Ortsbo::Language
+  english_name: Indonesian
+  native_name: Bahasa Indonesia
+  code: ind
+- !ruby/object:Ortsbo::Language
+  english_name: Irish (Ireland)
+  native_name: Gaeilge (Éire)
+  code: gle
+- !ruby/object:Ortsbo::Language
+  english_name: Italian
+  native_name: italiano
+  code: ita
+- !ruby/object:Ortsbo::Language
+  english_name: Japanese
+  native_name: 日本語
+  code: jpn
+- !ruby/object:Ortsbo::Language
+  english_name: Kiswahili
+  native_name: Kiswahili
+  code: swa
+- !ruby/object:Ortsbo::Language
+  english_name: Korean
+  native_name: 한국어
+  code: kor
+- !ruby/object:Ortsbo::Language
+  english_name: Latvian
+  native_name: latviešu
+  code: lav
+- !ruby/object:Ortsbo::Language
+  english_name: Lithuanian
+  native_name: lietuvių
+  code: lit
+- !ruby/object:Ortsbo::Language
+  english_name: Macedonian
+  native_name: македонски јазик
+  code: mkd
+- !ruby/object:Ortsbo::Language
+  english_name: Malay
+  native_name: Bahasa Malaysia
+  code: msa
+- !ruby/object:Ortsbo::Language
+  english_name: Maltese (Malta)
+  native_name: Malti (Malta)
+  code: mlt
+- !ruby/object:Ortsbo::Language
+  english_name: Norwegian
+  native_name: norsk
+  code: nor
+- !ruby/object:Ortsbo::Language
+  english_name: Persian
+  native_name: فارسى
+  code: fas
+- !ruby/object:Ortsbo::Language
+  english_name: Polish
+  native_name: polski
+  code: pol
+- !ruby/object:Ortsbo::Language
+  english_name: Portuguese
+  native_name: Português
+  code: por
+- !ruby/object:Ortsbo::Language
+  english_name: Romanian
+  native_name: română
+  code: ron
+- !ruby/object:Ortsbo::Language
+  english_name: Russian
+  native_name: русский
+  code: rus
+- !ruby/object:Ortsbo::Language
+  english_name: Serbian
+  native_name: srpski
+  code: srp
+- !ruby/object:Ortsbo::Language
+  english_name: Slovak
+  native_name: slovenčina
+  code: slk
+- !ruby/object:Ortsbo::Language
+  english_name: Slovenian
+  native_name: slovenski
+  code: slv
+- !ruby/object:Ortsbo::Language
+  english_name: Spanish
+  native_name: español
+  code: spa
+- !ruby/object:Ortsbo::Language
+  english_name: Swedish
+  native_name: svenska
+  code: swe
+- !ruby/object:Ortsbo::Language
+  english_name: Thai
+  native_name: ไทย
+  code: tha
+- !ruby/object:Ortsbo::Language
+  english_name: Turkish
+  native_name: Türkçe (Türkiye)
+  code: tur
+- !ruby/object:Ortsbo::Language
+  english_name: Ukrainian
+  native_name: україньска
+  code: ukr
+- !ruby/object:Ortsbo::Language
+  english_name: Vietnamese
+  native_name: Tiếng Việt
+  code: vie
+- !ruby/object:Ortsbo::Language
+  english_name: Welsh (United Kingdom)
+  native_name: Cymraeg (y Deyrnas Unedig)
+  code: cym
+- !ruby/object:Ortsbo::Language
+  english_name: Yiddish
+  native_name: ! 'yidish '
+  code: yid

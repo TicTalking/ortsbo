@@ -1,12 +1,18 @@
 require 'nokogiri'
 require 'json'
 require 'net/http'
+require 'ortsbo'
 
-desc "retrieving the list of Ortsbo supported languages"
-task :get_languages do |t, args|
+desc "updating the list of Ortsbo supported languages"
+task :update_languages do |t, args|
   response = Net::HTTP.get_response('ortsboapi.cloudapp.net', '/REST/GetLanguages')
   result = JSON.parse response.body
-  result.each {|l| puts l["NativeName"].capitalize}
-  puts result.count
-  puts "done"
+  languages = result.map {|r| Ortsbo::Language.new r["EnglishName"], r["NativeName"], r["Lang3Code"]}
+    .sort_by(&:english_name)
+  puts "Retrieved #{languages.count} languages"
+  file_path = File.expand_path(File.join(File.dirname(__FILE__), '..', 'data', 'languages.yml'));
+  File.open(file_path, 'w') do |io|
+    Psych.dump(languages, io)
+  end
+  puts "done updating #{file_path}"
 end
