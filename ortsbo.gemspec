@@ -15,4 +15,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
+
+  s.add_dependency "json"
+  s.add_dependency "nokogiri"
 end
