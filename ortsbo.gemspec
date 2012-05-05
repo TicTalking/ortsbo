@@ -13,10 +13,9 @@ Gem::Specification.new do |s|
   s.summary     = "A library to access the Ortsbo Translation API"
   s.description = ""
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["Rakefile", "README.md"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "json"
-  s.add_dependency "psych"
   s.add_dependency "nokogiri"
 end

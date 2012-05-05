@@ -1,4 +1,4 @@
-require 'psych'
+require 'yaml'
 
 module Ortsbo
   class Language
@@ -11,5 +11,5 @@ module Ortsbo
     end 
   end
 
-  SUPPORTED_LANGUAGES = Psych.load_file(File.expand_path(File.join(File.dirname(__FILE__), '..', '..', 'data', 'languages.yml')))
+  SUPPORTED_LANGUAGES = YAML.load_file(File.expand_path(File.join(File.dirname(__FILE__), '..', '..', 'data', 'languages.yml')))
 end

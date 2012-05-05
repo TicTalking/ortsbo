@@ -1,3 +1,4 @@
+require 'yaml'
 require 'nokogiri'
 require 'json'
 require 'net/http'
@@ -12,7 +13,7 @@ task :update_languages do |t, args|
   puts "Retrieved #{languages.count} languages"
   file_path = File.expand_path(File.join(File.dirname(__FILE__), '..', 'data', 'languages.yml'));
   File.open(file_path, 'w') do |io|
-    Psych.dump(languages, io)
+    YAML.dump(languages, io)
   end
   puts "done updating #{file_path}"
 end
