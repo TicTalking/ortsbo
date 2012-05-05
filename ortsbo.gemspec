@@ -17,5 +17,6 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "json"
+  s.add_dependency "psych"
   s.add_dependency "nokogiri"
 end
