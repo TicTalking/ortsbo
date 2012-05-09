@@ -11,22 +11,13 @@ module Ortsbo
       @ietf_tag = ietf_tag
     end
 
-    def self.find_by_ietf_tag ietf_tag
+    def self.find ietf_tag
       LANGUAGES_BY_IETF_TAG[ietf_tag]
-    end
-
-    def self.find_by_code code
-      LANGUAGES_BY_CODE[code]
     end
 
     def self.code_by_ietf_tag ietf_tag
       l = LANGUAGES_BY_IETF_TAG[ietf_tag]
       l ? l.code : nil
-    end
-
-    def self.ietf_tag_by_code code
-      l = LANGUAGES_BY_CODE[code]
-      l ? l.ietf_tag : nil
     end
   end
 
@@ -35,5 +26,4 @@ module Ortsbo
   protected
 
   LANGUAGES_BY_IETF_TAG = Hash[*LANGUAGES.map {|l| [l.ietf_tag, l]}.flatten]
-  LANGUAGES_BY_CODE = Hash[*LANGUAGES.map {|l| [l.code, l]}.flatten]
 end
