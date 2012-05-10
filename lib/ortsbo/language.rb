@@ -15,6 +15,16 @@ module Ortsbo
       LANGUAGES_BY_IETF_TAG[ietf_tag]
     end
 
+    def self.english_name_by_ietf_tag ietf_tag, default=nil
+      l = LANGUAGES_BY_IETF_TAG[ietf_tag]
+      l ? l.english_name : default
+    end
+
+    def self.native_name_by_ietf_tag ietf_tag, default=nil
+      l = LANGUAGES_BY_IETF_TAG[ietf_tag]
+      l ? l.native_name : default
+    end
+
     def self.code_by_ietf_tag ietf_tag
       l = LANGUAGES_BY_IETF_TAG[ietf_tag]
       l ? l.code : nil

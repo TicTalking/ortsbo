@@ -136,7 +136,7 @@
   ietf_tag: ga
 - !ruby/object:Ortsbo::Language
   english_name: Italian
-  native_name: italiano
+  native_name: Italiano
   code: ita
   ietf_tag: it
 - !ruby/object:Ortsbo::Language
