@@ -14,7 +14,7 @@ module Ortsbo
     case res
       when Net::HTTPSuccess
         decoded_response = JSON.parse res.body
-        decoded_response['Status'] == 1 ? decoded_response['TranslatedText'] : nil
+        decoded_response['TranslatedText']
       else
         nil
     end
