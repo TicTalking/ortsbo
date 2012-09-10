@@ -4,6 +4,10 @@ require 'json'
 require 'net/http'
 require 'ortsbo'
 
+
+# Change this to your own API key if you want to run the specs
+Ortsbo::API_KEY = nil
+
 desc "updating the list of Ortsbo supported languages"
 task :update_languages do |t, args|
   response = Net::HTTP.get_response('ortsboapi.cloudapp.net', '/REST/GetLanguages')

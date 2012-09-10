@@ -1,5 +1,8 @@
 require 'ortsbo'
 
+# Change this to your own API key if you want to run the specs
+Ortsbo::API_KEY = nil
+
 describe Ortsbo do
   it 'returns all supported languages' do
     Ortsbo::LANGUAGES.count.should eq 53
@@ -19,5 +22,10 @@ describe Ortsbo do
 
   it 'finds code by IETF tag' do
     Ortsbo::Language.code_by_ietf_tag('zh-CN').should eq 'zhs'
+  end
+
+  it 'Can translate string containing an ampersand' do
+    result = Ortsbo.translate "Salut mon nom est Chris & j'aime biere", 'fr', 'en'
+    result.should eq("Hi my name is Chris and I love beer")
   end
 end
