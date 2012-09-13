@@ -1,15 +1,15 @@
 PATH
   remote: .
   specs:
-    ortsbo (0.0.5)
+    ortsbo (0.0.6)
       json
       nokogiri
 
 GEM
   remote: http://rubygems.org/
   specs:
-    json (1.7.1)
-    nokogiri (1.5.2)
+    json (1.7.5)
+    nokogiri (1.5.5)
 
 PLATFORMS
   ruby
