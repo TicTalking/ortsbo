@@ -7,15 +7,16 @@ require "ortsbo/version"
 Gem::Specification.new do |s|
   s.name        = "ortsbo"
   s.version     = Ortsbo::VERSION
-  s.authors     = ["Chris Constantin"]
-  s.email       = ["chris@constantins.net"]
+  s.authors     = ["Chris Constantin, Aaron Webster"]
+  s.email       = ["aaronw@tictalking.com"]
   s.homepage    = "https://github.com/tictalking/ortsbo"
   s.summary     = "A library to access the Ortsbo Translation API"
   s.description = ""
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{app,config,db,lib,data}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "json"
   s.add_dependency "nokogiri"
+  s.add_dependency "httparty"
 end
